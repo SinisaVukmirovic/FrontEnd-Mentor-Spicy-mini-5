@@ -11,27 +11,29 @@
         grid-template-columns: 5fr 4fr;
         grid-template-areas: "H I"
         "C I";
-        border: 12px solid var(--Desaturated-Red);
+        border: 15px solid var(--Desaturated-Red);
     }
     
     header {
         grid-area: H;
         height: fit-content;
-        padding: 2rem 7rem;
+        padding: 2rem 5rem;
     }
     
     .content {
         grid-area: C;
-        padding: 3rem 7rem;
+        padding: 0 7rem 0 5rem;
         text-align: left;
     }
+        .content h2 {
+            font-size: 3rem;
+        }
     
     .image {
         grid-area: I;
     }
     .image img {
-        width: 100%;
-        height: 100%;
+        object-fit: cover;
     }
 
     footer {

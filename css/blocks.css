@@ -23,7 +23,6 @@ main {
         font-size: 3.25rem;
         letter-spacing: 10px;
         font-weight: 600;
-
     }
         .content .accent {
             font-weight: 300;
@@ -39,7 +38,6 @@ main {
 form {
     display: flex;
     margin: 2rem auto;
-    /* padding: 0 3rem; */
     width: 100%;
     position: relative;
 }
@@ -48,7 +46,6 @@ form {
         border-radius: 10rem;
         border: 1px solid var(--Desaturated-Red);
         width: 100%;
-        /* margin-left: 3rem; */
     }   
         input::placeholder {
             font-size: 1.25rem;
