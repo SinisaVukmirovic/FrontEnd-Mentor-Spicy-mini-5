@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 @import 'blocks.css';
+@import 'desktop.css';
 
 /* Colors */
 /* Primary */
@@ -32,6 +33,7 @@ body {
     font-family: var(--Josefin-Sans);
     font-weight: 400;
     color: var(--Dark-Grayish-Red);
+    background-color: var(--Dark-Grayish-Red);
 }
 
 img, picture, svg, video {
@@ -39,10 +41,9 @@ img, picture, svg, video {
     max-width: 100%;
 }
 
-/* button {    
-    outline: none;
-    border: none;
-} */
+button {    
+    cursor: pointer;
+}
 /* ======================= */
 
 html {
@@ -54,3 +55,8 @@ html {
     left: -100rem;
 }
 
+/* @media (min-width: 1440px) {
+    html {
+        font-size: 16px;
+    }
+} */

@@ -1,0 +1,40 @@
+@media (min-width: 1440px) {
+
+    body {
+        display: grid;
+        place-items: center;
+    }
+    
+    main {
+        max-width: 800px;
+        display: grid;
+        grid-template-columns: 5fr 4fr;
+        grid-template-areas: "H I"
+        "C I";
+        border: 12px solid var(--Desaturated-Red);
+    }
+    
+    header {
+        grid-area: H;
+        height: fit-content;
+        padding: 2rem 7rem;
+    }
+    
+    .content {
+        grid-area: C;
+        padding: 3rem 7rem;
+        text-align: left;
+    }
+    
+    .image {
+        grid-area: I;
+    }
+    .image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    footer {
+        display: none;
+    }
+}
