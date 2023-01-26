@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+@import 'blocks.css';
+
+/* Colors */
+/* Primary */
+:root {
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+    /* Neutral */
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+    /* Gradients */
+    /* - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+    - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%); */
+    /* Font */
+    --Josefin-Sans: 'Josefin Sans', sans-serif;
+    /* --Weights: 300, 400, 600 */
+}
+
+/* BASIC RESET */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--Josefin-Sans);
+    font-weight: 400;
+    color: var(--Dark-Grayish-Red);
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+/* button {    
+    outline: none;
+    border: none;
+} */
+/* ======================= */
+
+html {
+    font-size: 12px;
+}
+
+.hidden {
+    position: absolute;
+    left: -100rem;
+}
+

@@ -1,0 +1,77 @@
+header {
+    padding: 2rem;
+}
+    header img {
+        width: 40%;
+    }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.content {
+    padding: 5rem 3rem 0;
+}
+    .content h2 {
+        text-transform: uppercase;
+        font-size: 3.25rem;
+        letter-spacing: 10px;
+        font-weight: 600;
+
+    }
+        .content .accent {
+            font-weight: 300;
+            color: var(--Soft-Red);
+        }
+    .content p {
+        font-size: 1.15rem;
+        margin: 2rem 0;
+        line-height: 2;
+        color: var(--Soft-Red);
+    }
+
+form {
+    display: flex;
+    margin: 2rem auto;
+    /* padding: 0 3rem; */
+    width: 100%;
+    position: relative;
+}
+    form input {
+        padding: 1.25rem 2rem;
+        border-radius: 10rem;
+        border: 1px solid var(--Desaturated-Red);
+        width: 100%;
+        /* margin-left: 3rem; */
+    }   
+        input::placeholder {
+            font-size: 1.25rem;
+            color: var(--Desaturated-Red);
+        }
+    form button {
+        border-radius: 10rem;
+        border: 1px solid var(--Desaturated-Red);
+        background-image: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        position: absolute;
+        right: 0;
+        height: 100%;
+        padding: 0 2.15rem;
+    }
+
+footer {
+    margin-top: auto;
+    padding: 1rem;
+    background-color: var(--Desaturated-Red);
+}
+    footer .attribution {
+        font-size: 11px; text-align: center;
+    }
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
