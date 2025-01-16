@@ -10,9 +10,31 @@ body {
     flex-direction: column;
 }
 
-main {
+main[data-card] {
     background-color: #fff;
     text-align: center;
+
+    transition: all 300ms ease;
+
+    position: relative;
+    overflow: hidden;
+
+    & .gloss {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        border-radius: 100%;
+        background: radial-gradient(
+            circle,
+            rgba(255, 255, 255, .7) 0%,
+            rgba(255, 255, 255, 0) 50%,
+            rgba(255, 255, 255, 0) 100%
+        );
+        
+        will-change: opacity;
+        /* will-change tells the browser to do some rendering on which property that will change */
+        transition: opacity 200ms ease-out;
+    }
 }
 
 .content {

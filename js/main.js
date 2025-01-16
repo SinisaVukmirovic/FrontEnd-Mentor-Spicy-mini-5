@@ -34,35 +34,15 @@ card.addEventListener('mousemove', (e) => {
     // we multiply it to get at least 5 degree angle, since without it the value could be very small
     card.style.transform = `perspective(400px) rotate3D(${-rX}, ${rY}, 0, ${degrees}deg)`;
 
-    // console.log(rX, rY)
+    // gloss effect
+    gloss.style.transform = `translate(${-rY * 100}%, ${-rX * 100}%) scale(2)`;
+    // we use ry for X and rx for Y values because we want gloss effect to mirror the mouse movement
+    gloss.style.opacity = (distanceFromCardCenter * 0.7) / maximumDistance;
+
 });
 
+card.addEventListener('mouseleave', () => {
+    card.style = null;
 
-
-
-
-
-
-
-// const card = document.querySelector('main');
-
-// const tiltMove = (x, y) => `perspective(500px) rotateX(${x}deg) rotateY(${y}deg)`;
-
-// const height = card.clientHeight;
-// const width = card.clientWidth;
-
-// card.addEventListener('mousemove', (e) => {
-//     const rect = card.getBoundingClientRect();
-//     const x = e.clientX - rect.left;
-//     const y = e.clientY - rect.top;
-
-//     const multiplierX = 4;
-//     const multiplierY= 2;
-
-//     const xRotate = - multiplierX * ((y - width / 6) / width * 2.25);
-//     const yRotate = multiplierY * ((x - height / 2) / height);
-
-//     card.style.transform = tiltMove(xRotate, yRotate);
-// })
-
-// card.addEventListener('mouseout', () => card.style.transform = tiltMove(0, 0));
+    gloss.style.opacity = null;
+});
